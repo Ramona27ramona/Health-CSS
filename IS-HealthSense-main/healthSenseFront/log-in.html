@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!--IMPORT jQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./script.js" defer></script> 
+    <title>Inregistreaza-te sau conecteaza-te</title>
+</head>
+<body>
+
+    <div class="headerContainer">
+        <nav class="header">
+            <ul>
+                <li><a href="acasa.html">Acasa</a></li>
+                <li><a href="log-in.html">Conecteaza-te</a></li>
+            </ul>
+        </nav>
+    </div>
+    <style>
+        body{
+           text-align: center;
+       
+       }
+    </style>
+   <u><i><h1> HealthSense Monitor</h1></i> </u>
+   <span style="color: white;"><h2>Login page</h2></span>
+
+    <div class="container">
+        <form id="login-form" style="display:none;">
+            <div class="groupForm"><span style="color: white;">
+                <label for="login-email">E-mail:</label></span><br>
+                <input type="text" id="login-email" name="email" placeholder="John@gmail.com" value="">
+            </div>
+            <div class="groupForm"><span style="color: white;">
+                <label for="login-password">Password</label></span><br>
+                <input type="password" id="login-password" name="password" placeholder="********" value="">
+            </div>
+            <input type="submit" value="Login">
+        </form>
+    
+        <form id="signup-form" style="display:none;">
+            <div class="groupForm"><span style="color: white;">
+                <label for="status">Choose role:</label></span>
+                <select id="status" name="status" form="status" required>
+                    <option value="Doctor">Choose an option:</option>
+                    <option value="Doctor">Doctor</option>
+                    <option value="Pacient">Pacient</option>
+                </select>
+            </div>
+            <div class="groupForm">
+                <label for="signup-email">E-mail:</label><br>
+                <input type="text" id="signup-email" name="email" placeholder="John@gmail.com" value="">
+            </div>
+            <div class="groupForm">
+                <label for="signup-password">Password:</label><br>
+                <input type="password" id="signup-password" name="password" placeholder="********" value="">
+            </div>
+            <input type="submit" value="Sign up">
+        </form>
+        <div>
+            <button class="log">Login</button>
+            <button class="reg">Sign up</button>
+        </div>
+    </div>
+
+</body>
+</html>

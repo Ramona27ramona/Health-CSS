@@ -1,0 +1,64 @@
+/***** Universal ******/
+body{
+     backdrop-filter: blur(4px);
+    background-image: url(health.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+.header { display: flex; justify-content: end; padding: 15px; }
+.header ul { display: flex; list-style-type: none; margin: 0; padding: 0; gap: 15px; }
+.wrapper { margin: 90px 30px; }
+
+/***** Acasa ******/
+/***** Log-in/ Sing-up ******/
+h1{color:white;}
+p{ color: white;}
+ ul{color: white;}
+.container { min-height: 100vh; justify-content: center; align-items: center; display: flex; flex-direction: column;}
+.container div > p span { color: red; }
+.container p { position: relative; top: 30px; } 
+.container p a { color: black;text-decoration: none; } 
+button { cursor: pointer; border: 0; border-radius: 4px; font-weight: 600; margin: 0 10px;  width: 200px;  padding: 10px 0; box-shadow: 0 0 20px rgba(104, 85, 224, 0.2); transition: 0.4s; }
+.reg { color: white; margin-top: 30px; background-color: rgba(104, 85, 224, 1); }
+.log { color: rgb(104, 85, 224); background-color: rgba(255, 255, 255, 1);  border: 1px solid rgba(104, 85, 224, 1);margin-top: 30px; }
+button:hover { color: white; box-shadow: 0 0 20px rgba(104, 85, 224, 0.6); background-color: rgba(104, 85, 224, 1); }
+select { gap: 10px; display: flex; }
+
+/******consultatii-doctor********/
+#patients-container{ display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; }
+.patient { border: 1px solid white; border-radius: 15px; padding: 15px; }
+.btns { display: flex; }
+.title { display: flex; justify-content: center; text-align: center; align-items: center; }
+
+#consultatii-container{ display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; }
+.consultatie { border: 1px solid black; border-radius: 15px; padding: 15px; }
+/* FORM*/
+#patient-form .form-group { margin-bottom: 20px;width: 95%; }
+#patient-form label { display: block;margin-bottom: 5px; }
+#patient-form input[type="text"], textarea {width: 100%;padding: 10px;border: 1px solid #ccc;border-radius: 5px; }  
+#contactForm  button[type="submit"] { padding: 10px 20px;background-color: #0c570c;color: #fff;border: none;border-radius: 5px;cursor: pointer; }
+#contactForm button[type="submit"]:hover {background-color: #009900; }
+#contactForm .email-field{width: 100%;padding: 10px;border: 1px solid #ccc;border-radius: 5px; }
+#successMessage { display: none;font-size: 24px;color: green; margin-bottom: 10px; }
+#error-container { color: red;font-weight: bold;margin-top: 10px; }
+#patient-form { width: 70%;background-color:#f0f0f0;border:1px solid #f0f0f0;padding: 20px;margin: auto; }
+
+.btns button { margin-right: 5px; }
+.update-form { margin-top: 20px; }
+.update-form input,.update-form select,.update-form textarea,.update-form button { margin-bottom: 10px;display: block;width: 100%;padding: 8px;box-sizing: border-box; }
+.groupForm { margin-bottom: 15px; }
+.error {color: red;font-size: 12px; }
+.groupForm label { font-weight: bold;margin-bottom: 5px;display: block; }
+.success-message { background-color: #d4edda;color: #155724;padding: 10px 20px;border: 1px solid #c3e6cb;border-radius: 5px; }
+.error-message { color: red;font-size: 12px;margin-top: 5px; }
+.error-message { color: red;font-size: 12px;margin-top: 5px; }
+.error-message { color: red;font-size: 12px;margin-top: 5px; }
+.container { margin-top: 30px;margin-bottom: 30px;border-radius: 5px;display: flex;gap: 20px; }
+.row{ display: flex;justify-content: space-around;width: 100%;margin-top: 30px;margin-bottom: 30px;background-color:#f0f0f0; }
+.form-groupSex, .form-groupDataNasterii { display: flex;padding: 10px;gap: 10px; }
+.form-groupDataNasterii { padding-left: 0; }
+.groupForm { display: flex; padding: 15px; gap: 5px; }

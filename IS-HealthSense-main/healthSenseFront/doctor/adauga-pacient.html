@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="adauga-pacient.css">
+
+    <!--IMPORT jQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../script.js" defer></script> 
+    <title>Pacienti</title>
+</head>
+
+<body>
+    <div class="headerContainer">
+        <nav class="header">
+            <ul>
+                <li><a href="./acasa-doctor.html">Acasa</a></li>
+                <li><a href="./pacienti.html">Vezi toti pacientii</a></li>
+                <li><a href="./pacienti.html">Consultatii</a></li>
+                <li><a href="./adauga-pacient.html">Adauga un pacient</a></li>
+                <li id="loginButton"><button id="logoutButton">Log out</button></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container">
+        <h2>Adauga un pacient</h2>
+        <form id="patient-form" action="/pacient" method="POST">
+            <div class="form-group">
+                <label for="nume">Nume:</label>
+                <input type="text" id="nume" name="nume" class="input-field" placeholder="Nume" required>
+                <span class="error" id="nume-error"></span>
+            </div>
+            <div class="form-group">
+                <label for="prenume">Prenume:</label>
+                <input type="text" id="prenume" name="prenume" class="input-field" placeholder="Prenume" required>
+                <span class="error" id="prenume-error"></span>
+            </div>
+            <div class="form-groupDataNasterii">
+                <label for="dataNasterii">Data Nasterii:</label>
+                <input type="date" id="dataNasterii" name="dataNasterii" class="input-field" required>
+                <span class="error" id="dataNasterii-error"></span>
+            </div>
+            <div class="form-group">
+                <label for="istoricBolii">Istoric Bolii:</label>
+                <textarea id="istoricBolii" name="istoricBolii" class="input-field" rows="4" cols="50" placeholder="Istoric Bolii"></textarea>
+                <span class="error" id="istoricBolii-error"></span>
+            </div>
+            <div class="form-group">
+                <label for="medicamentatie">Medicamentatie:</label>
+                <textarea id="medicamentatie" name="medicamentatie" class="input-field" rows="4" cols="50" placeholder="Medicamentatie"></textarea>
+                <span class="error" id="medicamentatie-error"></span>
+            </div>
+            <div class="form-group">
+                <label for="adresa">Adresa:</label>
+                <input type="text" id="adresa" name="adresa" class="input-field" placeholder="Adresa">
+                <span class="error" id="adresa-error"></span>
+            </div>
+            <div class="form-groupSex">
+                <label for="sex">Sex:</label>
+                <select id="sex" name="sex" class="input-field" required>
+                    <option value="">Alegeti o optiune:</option>
+                    <option value="Feminin">Feminin</option>
+                    <option value="Masculin">Masculin</option>
+                </select>
+                <span class="error" id="sex-error"></span>
+            </div>
+            <input type="submit" value="Trimite">
+        </form>
+    </div>
+</body>
+</html>
